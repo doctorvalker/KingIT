@@ -1,0 +1,58 @@
+﻿<Page x:Class="KingIT.InterfaceMalls"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KingIT"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="InterfaceMalls">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="Название ТЦ" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <TextBox x:Name="MallN" Grid.Column="1" Grid.Row="2" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <TextBlock Grid.Column="1" Grid.Row="4" Text="Коэф. Доб. Стоимости" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <TextBox x:Name="ARV" Grid.Column="1" Grid.Row="5" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <TextBlock Grid.Column="3" Grid.Row="1" Text="Статус" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <TextBox x:Name="Stat" Grid.Column="3" Grid.Row="2" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <TextBlock Grid.Column="3" Grid.Row="4" Text="Стоимость" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <TextBox x:Name="CostM" Grid.Column="3" Grid.Row="5" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <TextBlock Grid.Column="1" Grid.Row="7" Text="Город" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <TextBox x:Name="CityM" Grid.Column="1" Grid.Row="8" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <TextBlock Grid.Column="3" Grid.Row="7" Text="Количество павилионов" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <TextBox x:Name="PC" Grid.Column="3" Grid.Row="8" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <TextBlock Grid.Column="1" Grid.Row="10" Text="Этажность" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <TextBox x:Name="Floor" Grid.Column="1" Grid.Row="11" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <Image x:Name="IM" Grid.Column="3" Grid.Row="11" Grid.RowSpan="3"/>
+        <TextBlock x:Name="PTPV" Grid.Column="3" Grid.Row="10" Text="Путь к фото" Opacity="0" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <TextBox x:Name="PTP" Grid.Column="3" Grid.Row="11" TextWrapping="Wrap" FontFamily="Arial" FontSize="30" Foreground="#557179"/>
+        <Button Content="Назад" Grid.Column="5" Grid.Row="2" FontFamily="Arial" FontSize="20" Foreground="#557179" Click="Backward"/>
+        <Button x:Name="AddM" Content="Добавить" Grid.Column="5" Grid.Row="5" FontFamily="Arial" FontSize="20" Foreground="#557179" Click="AddMall"/>
+        <Button x:Name="ChangeM" Content="Изменить" Grid.Column="5" Grid.Row="8" FontFamily="Arial" FontSize="20" Foreground="#557179" Click="ChangeMall"/>
+    </Grid>
+</Page>
