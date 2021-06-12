@@ -97,10 +97,10 @@ namespace KingIT
             switch (Stat)
             {
                 case "Администратор":
-                    NavigationService.Navigate(new MainMenu());
+                    NavigationService.Navigate(new MenuAdmin());
                     break;
                 case "Менеджер А":
-                    NavigationService.Navigate(new MainMenu());
+                    NavigationService.Navigate(new MenuTenants());
                     break;
                 case "Менеджер С":
                     NavigationService.Navigate(new MainMenu());

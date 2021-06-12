@@ -59,11 +59,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="InterfaceAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="InterfaceMalls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="InterfacePavilions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InterfaceTenants.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -82,11 +90,17 @@
     <Compile Include="Autoriz.xaml.cs">
       <DependentUpon>Autoriz.xaml</DependentUpon>
     </Compile>
+    <Compile Include="InterfaceAdmin.xaml.cs">
+      <DependentUpon>InterfaceAdmin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="InterfaceMalls.xaml.cs">
       <DependentUpon>InterfaceMalls.xaml</DependentUpon>
     </Compile>
     <Compile Include="InterfacePavilions.xaml.cs">
       <DependentUpon>InterfacePavilions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceTenants.xaml.cs">
+      <DependentUpon>InterfaceTenants.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
@@ -99,6 +113,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MenuTenants.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MPList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -107,6 +125,9 @@
   <ItemGroup>
     <Compile Include="MenuAdmin.xaml.cs">
       <DependentUpon>MenuAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTenants.xaml.cs">
+      <DependentUpon>MenuTenants.xaml</DependentUpon>
     </Compile>
     <Compile Include="MPList.xaml.cs">
       <DependentUpon>MPList.xaml</DependentUpon>
